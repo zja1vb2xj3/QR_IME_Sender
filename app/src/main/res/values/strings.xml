@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QR IME Sender</string>
+    <string name="ime_name">QR IME Sender</string>
+    <string name="scan_qr">QR 스캔</string>
+
+    <string name="clear_text">Clear</string>
+</resources>
