@@ -2,6 +2,7 @@ package com.example.qr_ime_sender.ime
 
 import android.content.Intent
 import android.inputmethodservice.InputMethodService
+import android.provider.Settings
 import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.EditorInfo
@@ -20,6 +21,7 @@ class QrImeService : InputMethodService() {
 
         val btnScanQr = view.findViewById<Button>(R.id.btnScanQr)
         val btnClear = view.findViewById<Button>(R.id.btnClear)
+        val btnKeyboardSettings = view.findViewById<Button>(R.id.btnKeyboardSettings)
 
         btnScanQr.setOnClickListener {
             openScanner()
@@ -27,6 +29,10 @@ class QrImeService : InputMethodService() {
 
         btnClear.setOnClickListener {
             clearCurrentInput()
+        }
+
+        btnKeyboardSettings.setOnClickListener {
+            openKeyboardSettings()
         }
 
         return view
@@ -51,6 +57,13 @@ class QrImeService : InputMethodService() {
         val intent = Intent(this, QrScanLauncherActivity::class.java).apply {
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+        }
+        startActivity(intent)
+    }
+
+    private fun openKeyboardSettings() {
+        val intent = Intent(Settings.ACTION_INPUT_METHOD_SETTINGS).apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         }
         startActivity(intent)
     }

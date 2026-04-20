@@ -33,7 +33,10 @@
         <activity
             android:name=".scanner.QrScanLauncherActivity"
             android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.example.qr_ime_sender.scanner" />
 
         <activity
             android:name=".MainActivity"
