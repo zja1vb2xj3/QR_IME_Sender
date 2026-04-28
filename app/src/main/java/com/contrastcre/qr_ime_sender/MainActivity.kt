@@ -18,6 +18,7 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 
 class MainActivity : ComponentActivity() {
@@ -46,20 +47,14 @@ fun MainScreen() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "QR IME Sender",
+            text = stringResource(R.string.main_title),
             style = MaterialTheme.typography.headlineMedium
         )
 
         Spacer(modifier = Modifier.height(20.dp))
 
         Text(
-            text =
-                "사용 방법\n\n" +
-                        "1. 입력기 설정에서 QR IME Sender를 활성화합니다.\n" +
-                        "2. Chrome 웹앱으로 이동합니다.\n" +
-                        "3. QR을 넣을 input을 클릭합니다.\n" +
-                        "4. 키보드를 QR IME Sender로 변경합니다.\n" +
-                        "5. 키보드의 [QR 스캔] 버튼을 눌러 스캔합니다.",
+            text = stringResource(R.string.usage_text),
             style = MaterialTheme.typography.bodyLarge
         )
 
@@ -74,7 +69,7 @@ fun MainScreen() {
                 }
             }
         ) {
-            Text("입력기 설정 열기")
+            Text(stringResource(R.string.open_ime_settings))
         }
     }
 }

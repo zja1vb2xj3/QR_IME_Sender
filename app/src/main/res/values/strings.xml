@@ -1,7 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">QR IME Sender</string>
     <string name="ime_name">QR IME Sender</string>
-    <string name="scan_qr">QR 스캔</string>
+
+    <string name="scan_qr">Scan QR</string>
     <string name="clear_text">Clear</string>
-    <string name="keyboard_settings">키보드 설정</string>
+    <string name="keyboard_settings">Keyboard Settings</string>
+
+    <string name="main_title">QR IME Sender</string>
+
+    <string name="usage_text">\n\n How to use \n\n
+
+1. Enable QR IME Sender in the input method settings.\n\n
+2. Move to the target app or screen where you want to enter text. Example: Chrome. \n\n
+3. Tap the input field where the QR text should be entered. \n\n
+4. Switch the keyboard to QR IME Sender. \n\n
+5. Tap the [Scan QR] button on the keyboard and scan the QR code.</string>
+
+    <string name="open_ime_settings">Open input method settings</string>
+
+    <string name="scan_failed_retry">Scan failed. Retrying. (%1$d/%2$d)</string>
+    <string name="scan_failed_go_main">Scanning failed repeatedly. Returning to the main screen.</string>
+
 </resources>
+

@@ -5,16 +5,24 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import com.contrastcre.qr_ime_sender.MainActivity
+import com.contrastcre.qr_ime_sender.R
 import com.contrastcre.qr_ime_sender.store.PendingScanStore
+import com.google.mlkit.vision.barcode.common.Barcode
 import com.google.mlkit.vision.codescanner.GmsBarcodeScannerOptions
 import com.google.mlkit.vision.codescanner.GmsBarcodeScanning
-import com.google.mlkit.vision.barcode.common.Barcode
 
 class QrScanLauncherActivity : Activity() {
 
     private var launched = false
-    private val maxRetryCount = 3
     private var retryCount = 0
+
+    private val maxRetryCount: Int by lazy {
+        resources.getInteger(R.integer.max_retry_count)
+    }
+
+    private val retryDelayMs: Long by lazy {
+        resources.getInteger(R.integer.scan_retry_delay_ms).toLong()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +50,7 @@ class QrScanLauncherActivity : Activity() {
         scanner.startScan()
             .addOnSuccessListener { barcode ->
                 val qrData = barcode.rawValue?.trim().orEmpty()
+
                 if (qrData.isNotEmpty()) {
                     PendingScanStore.save(this, qrData)
                 }
@@ -57,17 +66,21 @@ class QrScanLauncherActivity : Activity() {
                 if (retryCount <= maxRetryCount) {
                     Toast.makeText(
                         this,
-                        "스캔에 실패했습니다. 다시 시도합니다. ($retryCount/$maxRetryCount)",
+                        getString(
+                            R.string.scan_failed_retry,
+                            retryCount,
+                            maxRetryCount
+                        ),
                         Toast.LENGTH_SHORT
                     ).show()
 
                     window.decorView.postDelayed({
                         startQrScan()
-                    }, 500)
+                    }, retryDelayMs)
                 } else {
                     Toast.makeText(
                         this,
-                        "스캔에 계속 실패했습니다. 초기 화면으로 이동합니다.",
+                        getString(R.string.scan_failed_go_main),
                         Toast.LENGTH_SHORT
                     ).show()
 
@@ -86,6 +99,7 @@ class QrScanLauncherActivity : Activity() {
             addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
         }
+
         startActivity(intent)
         finishAndRemoveTask()
     }
