@@ -1,4 +1,4 @@
-package com.example.qr_ime_sender
+package com.contrastcre.qr_ime_sender
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

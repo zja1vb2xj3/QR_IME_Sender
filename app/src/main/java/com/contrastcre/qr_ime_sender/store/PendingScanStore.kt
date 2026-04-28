@@ -1,4 +1,4 @@
-package com.example.qr_ime_sender.store
+package com.contrastcre.qr_ime_sender.store
 
 import android.content.Context
 

@@ -1,4 +1,4 @@
-package com.example.qr_ime_sender.ui.theme
+package com.contrastcre.qr_ime_sender.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

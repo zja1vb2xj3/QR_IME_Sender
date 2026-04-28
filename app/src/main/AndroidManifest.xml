@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -36,12 +35,11 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:noHistory="true"
             android:excludeFromRecents="true"
-            android:taskAffinity="com.example.qr_ime_sender.scanner" />
+            android:taskAffinity="com.contrastcre.qr_ime_sender.scanner" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.QR_IME_Sender"
             android:noHistory="true"
             android:excludeFromRecents="true">

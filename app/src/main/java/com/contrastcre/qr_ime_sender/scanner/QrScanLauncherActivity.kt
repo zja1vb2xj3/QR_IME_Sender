@@ -1,11 +1,11 @@
-package com.example.qr_ime_sender.scanner
+package com.contrastcre.qr_ime_sender.scanner
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import com.example.qr_ime_sender.MainActivity
-import com.example.qr_ime_sender.store.PendingScanStore
+import com.contrastcre.qr_ime_sender.MainActivity
+import com.contrastcre.qr_ime_sender.store.PendingScanStore
 import com.google.mlkit.vision.codescanner.GmsBarcodeScannerOptions
 import com.google.mlkit.vision.codescanner.GmsBarcodeScanning
 import com.google.mlkit.vision.barcode.common.Barcode

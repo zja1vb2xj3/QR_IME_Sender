@@ -1,6 +1,5 @@
-package com.example.qr_ime_sender.ui.theme
+package com.contrastcre.qr_ime_sender.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

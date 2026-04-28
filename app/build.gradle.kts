@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.qr_ime_sender"
+    namespace = "com.contrastcre.qr_ime_sender"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.qr_ime_sender"
+        applicationId = "com.contrastcre.qr_ime_sender"
         minSdk = 23
         targetSdk = 35
         versionCode = 1

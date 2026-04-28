@@ -1,4 +1,4 @@
-package com.example.qr_ime_sender.ime
+package com.contrastcre.qr_ime_sender.ime
 
 import android.content.Intent
 import android.inputmethodservice.InputMethodService
@@ -8,9 +8,9 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.ExtractedTextRequest
 import android.widget.Button
-import com.example.qr_ime_sender.R
-import com.example.qr_ime_sender.scanner.QrScanLauncherActivity
-import com.example.qr_ime_sender.store.PendingScanStore
+import com.contrastcre.qr_ime_sender.R
+import com.contrastcre.qr_ime_sender.scanner.QrScanLauncherActivity
+import com.contrastcre.qr_ime_sender.store.PendingScanStore
 
 class QrImeService : InputMethodService() {
 
