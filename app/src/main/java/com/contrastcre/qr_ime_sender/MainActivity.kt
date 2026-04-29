@@ -71,6 +71,10 @@ fun MainScreen(
     onOpenImeSettings: () -> Unit,
     onSelectIme: () -> Unit
 ) {
+    val imeName = stringResource(R.string.ime_name)
+    val scanCodeText = stringResource(R.string.scan_code)
+    val keyboardSettingsText = stringResource(R.string.keyboard_settings)
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -103,9 +107,9 @@ fun MainScreen(
                     .fillMaxWidth()
                     .padding(16.dp),
                 text = if (isImeEnabled) {
-                    stringResource(R.string.ime_status_enabled)
+                    stringResource(R.string.ime_status_enabled, imeName)
                 } else {
-                    stringResource(R.string.ime_status_disabled)
+                    stringResource(R.string.ime_status_disabled, imeName)
                 },
                 style = MaterialTheme.typography.bodyLarge,
                 fontWeight = FontWeight.Bold,
@@ -124,7 +128,9 @@ fun MainScreen(
             modifier = Modifier.fillMaxWidth(),
             onClick = onOpenImeSettings
         ) {
-            Text(stringResource(R.string.step1_enable_ime))
+            Text(
+                text = stringResource(R.string.step1_enable_ime, imeName)
+            )
         }
 
         Spacer(modifier = Modifier.height(12.dp))
@@ -134,13 +140,20 @@ fun MainScreen(
             enabled = isImeEnabled,
             onClick = onSelectIme
         ) {
-            Text(stringResource(R.string.step2_select_ime))
+            Text(
+                text = stringResource(R.string.step2_select_ime, imeName)
+            )
         }
 
         Spacer(modifier = Modifier.height(28.dp))
 
         Text(
-            text = stringResource(R.string.usage_text),
+            text = stringResource(
+                R.string.usage_text,
+                imeName,
+                scanCodeText,
+                keyboardSettingsText
+            ),
             style = MaterialTheme.typography.bodyMedium
         )
 

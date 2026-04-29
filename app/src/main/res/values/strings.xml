@@ -1,41 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">QR IME Sender</string>
-    <string name="ime_name">QR IME Sender</string>
+    <string name="app_name">QR Input Keyboard</string>
+    <string name="ime_name">QR Input Keyboard</string>
 
-    <string name="scan_qr">Scan QR</string>
+    <string name="scan_code">Scan Code</string>
     <string name="clear_text">Clear</string>
     <string name="keyboard_settings">Keyboard Settings</string>
 
     <string name="main_title">QR IME Sender</string>
 
-    <string name="usage_text">How to use \n
+    <string name="usage_text">How to use\n\nSetup\n1. Tap [Step 1. Enable %1$s].\n2. Turn on %1$s in the keyboard settings.\n3. Press Back to return to this app.\n4. Tap [Step 2. Select %1$s].\n5. Select %1$s as the input method.\n\nScan\n1. Open the app or screen where you want to enter text. Example: Chrome.\n2. Tap the input field where the code text should be entered.\n3. Tap [%2$s] on the %1$s keyboard.\n4. Scan the QR code or Data Matrix code.\n5. The scanned text will be entered into the selected input field.\n6. When you finish using the custom keyboard, tap [%3$s] to switch back to your previous keyboard.\n</string>
 
-\n Setup \n
-1. Tap [Step 1. Enable QR IME Sender].\n
-2. Turn on QR IME Sender in the keyboard settings.\n
-3. Press Back to return to this app.\n
-4. Tap [Step 2. Select QR IME Sender].\n
-5. Select QR IME Sender as the input method.\n
-
-\n Scan \n
-1. Open the app or screen where you want to enter text. Example: Chrome.\n
-2. Tap the input field where the QR text should be entered.\n
-3. Tap [Scan QR] on the QR IME Sender keyboard.\n
-4. Scan the QR code.\n
-5. The scanned text will be entered into the selected input field.\n
-6. When you finish using the custom keyboard, tap [Keyboard Settings] to switch back to your previous keyboard.\n</string>
+    <string name="ime_status_enabled">%1$s is enabled.</string>
+    <string name="ime_status_disabled">%1$s is not enabled yet.</string>
 
     <string name="open_ime_settings">Open input method settings</string>
 
     <string name="scan_failed_retry">Scan failed. Retrying. (%1$d/%2$d)</string>
     <string name="scan_failed_go_main">Scanning failed repeatedly. Returning to the main screen.</string>
 
-    <string name="ime_status_enabled">QR IME Sender is enabled.</string>
-    <string name="ime_status_disabled">QR IME Sender is not enabled yet.</string>
-
-    <string name="step1_enable_ime">Step 1. Enable QR IME Sender</string>
-    <string name="step2_select_ime">Step 2. Select QR IME Sender</string>
+    <string name="step1_enable_ime">Step 1. Enable %1$s</string>
+    <string name="step2_select_ime">Step 2. Select %1$s</string>
 
 </resources>
 

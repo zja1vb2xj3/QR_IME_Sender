@@ -1,39 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">QR IME Sender</string>
-    <string name="ime_name">QR IME Sender</string>
+    <string name="app_name">QR 입력 키보드</string>
+    <string name="ime_name">QR 입력 키보드</string>
 
-    <string name="scan_qr">QR 스캔</string>
+    <string name="scan_code">코드 스캔</string>
     <string name="clear_text">지우기</string>
     <string name="keyboard_settings">키보드 설정</string>
 
-    <string name="main_title">QR IME Sender</string>
+    <string name="main_title">QR 입력 키보드</string>
 
-    <string name="usage_text">사용 방법 \n
-
-\n 설정 \n
-1. [1단계. QR IME Sender 활성화하기]를 누릅니다.\n
-2. 키보드 설정 화면에서 QR IME Sender를 활성화합니다.\n
-3. 뒤로가기 버튼을 눌러 이 앱으로 돌아옵니다.\n
-4. [2단계. QR IME Sender 선택하기]를 누릅니다.\n
-5. 입력 방법에서 QR IME Sender를 선택합니다.\n
-
-\n 스캔 \n
-1. 입력할 앱 또는 화면으로 이동합니다. 예: Chrome. \n
-2. QR 값을 입력할 입력창을 누릅니다. \n
-3. QR IME Sender 키보드에서 [QR 스캔] 버튼을 누릅니다. \n
-4. QR 코드를 스캔합니다. \n
-5. 스캔된 문자가 선택한 입력창에 입력됩니다.\n
-6. 커스텀 키보드 사용이 끝나면 [키보드 설정] 버튼을 눌러 기존 키보드로 변경할 수 있습니다. \n</string>
+    <string name="usage_text">사용 방법\n\n설정\n1. [1단계. %1$s 활성화하기]를 누릅니다.\n2. 키보드 설정 화면에서 %1$s를 활성화합니다.\n3. 뒤로가기 버튼을 눌러 이 앱으로 돌아옵니다.\n4. [2단계. %1$s 선택하기]를 누릅니다.\n5. 입력 방법에서 %1$s를 선택합니다.\n\n스캔\n1. 입력할 앱 또는 화면으로 이동합니다. 예: Chrome.\n2. 코드 값을 입력할 입력창을 누릅니다.\n3. %1$s 키보드에서 [%2$s] 버튼을 누릅니다.\n4. QR 코드 또는 Data Matrix 코드를 스캔합니다.\n5. 스캔된 문자가 선택한 입력창에 입력됩니다.\n6. 커스텀 키보드 사용이 끝나면 [%3$s] 버튼을 눌러 기존 키보드로 변경할 수 있습니다.</string>
 
     <string name="open_ime_settings">입력기 설정 열기</string>
 
     <string name="scan_failed_retry">스캔에 실패했습니다. 다시 시도합니다. (%1$d/%2$d)</string>
     <string name="scan_failed_go_main">스캔에 계속 실패했습니다. 초기 화면으로 이동합니다.</string>
 
-    <string name="ime_status_enabled">QR IME Sender가 활성화되어 있습니다.</string>
-    <string name="ime_status_disabled">QR IME Sender가 아직 활성화되지 않았습니다.</string>
+    <string name="ime_status_enabled">%1$s가 활성화되어 있습니다.</string>
+    <string name="ime_status_disabled">%1$s가 아직 활성화되지 않았습니다.</string>
 
-    <string name="step1_enable_ime">1단계. QR IME Sender 활성화하기</string>
-    <string name="step2_select_ime">2단계. QR IME Sender 선택하기</string>
+    <string name="step1_enable_ime">1단계. %1$s 활성화하기</string>
+    <string name="step2_select_ime">2단계. %1$s 선택하기</string>
 </resources>
