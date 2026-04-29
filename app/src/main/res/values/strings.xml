@@ -9,18 +9,33 @@
 
     <string name="main_title">QR IME Sender</string>
 
-    <string name="usage_text">\n\n How to use \n\n
+    <string name="usage_text">How to use \n
 
-1. Enable QR IME Sender in the input method settings.\n\n
-2. Move to the target app or screen where you want to enter text. Example: Chrome. \n\n
-3. Tap the input field where the QR text should be entered. \n\n
-4. Switch the keyboard to QR IME Sender. \n\n
-5. Tap the [Scan QR] button on the keyboard and scan the QR code.</string>
+\n Setup \n
+1. Tap [Step 1. Enable QR IME Sender].\n
+2. Turn on QR IME Sender in the keyboard settings.\n
+3. Press Back to return to this app.\n
+4. Tap [Step 2. Select QR IME Sender].\n
+5. Select QR IME Sender as the input method.\n
+
+\n Scan \n
+1. Open the app or screen where you want to enter text. Example: Chrome.\n
+2. Tap the input field where the QR text should be entered.\n
+3. Tap [Scan QR] on the QR IME Sender keyboard.\n
+4. Scan the QR code.\n
+5. The scanned text will be entered into the selected input field.\n
+6. When you finish using the custom keyboard, tap [Keyboard Settings] to switch back to your previous keyboard.\n</string>
 
     <string name="open_ime_settings">Open input method settings</string>
 
     <string name="scan_failed_retry">Scan failed. Retrying. (%1$d/%2$d)</string>
     <string name="scan_failed_go_main">Scanning failed repeatedly. Returning to the main screen.</string>
+
+    <string name="ime_status_enabled">QR IME Sender is enabled.</string>
+    <string name="ime_status_disabled">QR IME Sender is not enabled yet.</string>
+
+    <string name="step1_enable_ime">Step 1. Enable QR IME Sender</string>
+    <string name="step2_select_ime">Step 2. Select QR IME Sender</string>
 
 </resources>
 

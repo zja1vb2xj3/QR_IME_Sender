@@ -41,7 +41,6 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.QR_IME_Sender"
-            android:noHistory="true"
             android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,3 +50,15 @@
     </application>
 
 </manifest>
+
+<!--<activity-->
+<!--android:name=".MainActivity"-->
+<!--android:exported="true"-->
+<!--android:theme="@style/Theme.QR_IME_Sender"-->
+<!--android:noHistory="true"-->
+<!--android:excludeFromRecents="true">-->
+<!--<intent-filter>-->
+<!--    <action android:name="android.intent.action.MAIN" />-->
+<!--    <category android:name="android.intent.category.LAUNCHER" />-->
+<!--</intent-filter>-->
+<!--</activity>-->
